@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wallpaper_login_page"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="80px"
+        app:cardBackgroundColor="#BD19143D"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="34dp"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="#DDDDDD"
+                android:text="USER LOGIN"
+                android:textSize="38sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                android:textColorHint="#E8E8E8"
+                app:hintTextColor="@color/white"
+                android:hint="Email id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#E1E1E1"
+                     />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#E8E8E8"
+                app:hintTextColor="@color/white"
+                android:hint="Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+
+                    android:textColor="#EDEDED"
+                    android:textColorHint="@color/white"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:textColor="#BBBBBB"
+                android:text="Forgot password?"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_login"
+                android:layout_width="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="LOGIN" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

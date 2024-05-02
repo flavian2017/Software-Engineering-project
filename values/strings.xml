@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpaceX Starship</string>
+    <string name="spinnerTO">TO</string>
+    <string name="spinnerFROM">FROM</string>
+    <string name="para">With Starship and Super Heavy, most international long distance trips would be completed in 30 minutes or less. In addition to vastly increased speed, one great benefit to traveling in space outside of Earth’s atmosphere is the lack of friction as well as turbulence and weather. Imagine most journeys taking less than 30 minutes with access to anywhere in the world in an hour or less.</string>
+
+</resources>

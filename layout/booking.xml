@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.cardview.widget.CardView
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:cardBackgroundColor="#F41C1C1C"
+    app:cardCornerRadius="20px"
+    android:layout_marginBottom="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="#EAEAEA"
+            android:text="BOOKING"
+            android:textSize="38sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#BFBFBF"
+                android:textColorHint="#BFBFBF"
+                android:hint="Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:textColor="#BFBFBF"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    tools:text="Peter parker" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#BFBFBF"
+
+            app:boxStrokeColor="@color/white"
+            android:hint="Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#EAEAEA"
+                android:inputType="phone"
+                tools:text="0909340242" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#BFBFBF"
+            app:boxStrokeColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:hint="Date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date"
+                android:textColor="#BFBFBF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                tools:text="02/08/2024" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+        android:background="@drawable/custom_border"
+            android:backgroundTint="#767676"
+        android:layout_marginTop="70px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="0dp"
+            android:textColor="#E7E7E7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:text="FROM"/>
+
+        <Spinner
+            android:id="@+id/SourceSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:layout_weight="0.5"
+            android:layout_marginTop="50px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/custom_border"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:backgroundTint="#767676"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="0dp"
+            android:textColor="#E7E7E7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:text="TO"/>
+        <Spinner
+            android:id="@+id/DestnationSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:layout_marginTop="50px" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_confirm_booking"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#EAEAEA"
+            android:text="CONFIRM BOOKING" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#747474"
+            android:textSize="12dp"
+            android:text="*CARGO TRANSPORT BOOKING COMING SOON"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
